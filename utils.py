@@ -88,21 +88,21 @@ def autoplay_audio(file_path: str):
     st.markdown(md, unsafe_allow_html=True)
 
 pdf_files = [
-    "doc/CGC-Aquatics-Programs-Parent-Handbook.pdf",
-    "docs/client-handbook-recreation.pdf",
-    "docs/curriculum_swimming_and_water_safety-a_guide_for_parents.pdf",
-    "docs/dipadees_learntoswim_infobk.pdf",
-    "docs/LTS flyer Term 3 2015.pdf",
-    "docs/National-Swimming-and-Water-Safety-Framework_FINAL-2020.pdf",
-    "docs/Parent Handbook.pdf",
-    "docs/ssa_info_book.pdf",
-    "docs/Swim+School+-+Parents+Handbook-lowres-web.pdf",
-    "docs/Swimming Lessons Level Progression Chart _ The Y.pdf",
-    "docs/Swim-Lessons-Parent-Handbook_r4.pdf",
-    "docs/WIRAC LTS Timetable.pdf",
-    "docs/Y NSW Swim School Program - Terms and Conditions _ The Y.pdf",
-    "docs/YMCA Swim Lesson Level Guide.pdf",
-    "docs/YMCA-Swim-School-Brochure.pdf",
+    "CGC-Aquatics-Programs-Parent-Handbook.pdf",
+    "client-handbook-recreation.pdf",
+    "curriculum_swimming_and_water_safety-a_guide_for_parents.pdf",
+    "dipadees_learntoswim_infobk.pdf",
+    "LTS flyer Term 3 2015.pdf",
+    "National-Swimming-and-Water-Safety-Framework_FINAL-2020.pdf",
+    "Parent Handbook.pdf",
+    "ssa_info_book.pdf",
+    "Swim+School+-+Parents+Handbook-lowres-web.pdf",
+    "Swimming Lessons Level Progression Chart _ The Y.pdf",
+    "Swim-Lessons-Parent-Handbook_r4.pdf",
+    "WIRAC LTS Timetable.pdf",
+    "Y NSW Swim School Program - Terms and Conditions _ The Y.pdf",
+    "YMCA Swim Lesson Level Guide.pdf",
+    "YMCA-Swim-School-Brochure.pdf",
    ]
 vector_store = create_vector_store(pdf_files)
 conversation_chain = get_conversation_chain(vector_store)
